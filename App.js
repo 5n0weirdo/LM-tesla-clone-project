@@ -6,12 +6,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.carContainer}></View>
-      <View>
-        <Text>Model S</Text>
-        <Text>Starting at $69,420</Text>
+      <View style={styles.titles}>
+        <Text style={styles.title}>Model S</Text>
+        <Text style={styles.subTitle}>Starting at $69,420</Text>
       </View>
-
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -19,9 +17,20 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#ffffff",
     alignItems: "center",
     justifyContent: "center",
   },
-  carContainer: {},
+  carContainer: {
+    width: "100%",
+    height: "100%",
+  },
+  titles: {
+    marginBottom: "125%",
+    alignItems: "center",
+    width: "100%",
+    height: "100%",
+  },
+  title: {},
+  subTitle: {},
 });
