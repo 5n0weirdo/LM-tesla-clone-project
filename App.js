@@ -1,10 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ImageBackground } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <ImageBackground
+        source={require("./assets/images/ModelX.jpeg")}
+        style={{ height: "100%", width: "100%", position: "absolute" }}
+      />
       <View style={styles.carContainer}></View>
       <View style={styles.titles}>
         <Text style={styles.title}>Model S</Text>
