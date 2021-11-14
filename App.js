@@ -32,5 +32,7 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   title: { fontSize: 40, fontWeight: "700" },
-  subTitle: {},
+  subTitle: {
+    color: "#5c5e62",
+  },
 });
