@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
   },
-  title: {},
+  title: { fontSize: 40, fontWeight: "700" },
   subTitle: {},
 });
