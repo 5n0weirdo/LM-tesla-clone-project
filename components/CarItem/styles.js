@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   titles: {
-    marginBottom: "130%",
+    // marginBottom: "10%",
+    marginTop: "30%",
     alignItems: "center",
     width: "100%",
     height: "100%",
