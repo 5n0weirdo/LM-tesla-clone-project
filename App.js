@@ -7,9 +7,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <CarItem
-        name={"Model X"}
+        name={"Model 3"}
         tagline={"Starting from $99.80"}
-        image={require("./assets/images/ModelX.jpeg")}
+        image={require("./assets/images/Model3.jpeg")}
       />
       <StyledButton />
     </View>
