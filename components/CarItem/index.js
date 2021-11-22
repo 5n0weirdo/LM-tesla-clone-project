@@ -1,20 +1,38 @@
 import React from "react";
-import { View, Text, ImageBackground } from "react-native";
+import { View, Text, ImageBackground, StyleSheet } from "react-native";
 import styles from "./styles";
 import StyledButton from "../StyledButton";
 
 const CarItem = (props) => {
+  const { name, tagline, image } = props;
   return (
     <View style={styles.carContainer}>
       <ImageBackground
-        source={require("../../assets/images/ModelX.jpeg")}
-        style={{ height: "100%", width: "100%", position: "absolute" }}
+        source={image}
+        style={{ height: "110%", width: "100%", position: "absolute" }}
       />
       <View style={styles.titles}>
-        <Text style={styles.title}>Model S</Text>
-        <Text style={styles.subTitle}>Starting at $69,420</Text>
+        <Text style={styles.title}> {name}</Text>
+        <Text style={styles.subTitle}>{tagline}</Text>
       </View>
-      <StyledButton />
+      <View style={styles.btnContainer}>
+        <StyledButton
+          type="primary"
+          content={"Custom order"}
+          onPress={() => {
+            console.warn("Custom order pressed");
+          }}
+        />
+      </View>
+      <View style={styles.btn2Container}>
+        <StyledButton
+          type="secondary"
+          content={"Existing Invetory"}
+          onPress={() => {
+            console.warn("Existing Invetory pressed");
+          }}
+        />
+      </View>
     </View>
   );
 };

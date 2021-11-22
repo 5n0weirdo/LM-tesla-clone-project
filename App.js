@@ -6,7 +6,11 @@ import StyledButton from "./components/StyledButton";
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem />
+      <CarItem
+        name={"Model X"}
+        tagline={"Starting from $99.80"}
+        image={require("./assets/images/ModelX.jpeg")}
+      />
       <StyledButton />
     </View>
   );

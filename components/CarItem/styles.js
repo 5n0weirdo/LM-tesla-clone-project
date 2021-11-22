@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
   titles: {
     // marginBottom: "10%",
-    marginTop: "30%",
+    marginTop: "40%",
     alignItems: "center",
     width: "100%",
     height: "100%",
@@ -21,6 +21,18 @@ const styles = StyleSheet.create({
   title: { fontSize: 40, fontWeight: "700" },
   subTitle: {
     color: "#5c5e62",
+  },
+  btn1Container: {
+    // flexDirection: "column",
+    position: "absolute",
+    top: "115%",
+    width: "100%",
+  },
+  btn2Container: {
+    // flexDirection: "column",
+    position: "absolute",
+    top: "122%",
+    width: "100%",
   },
 });
 
