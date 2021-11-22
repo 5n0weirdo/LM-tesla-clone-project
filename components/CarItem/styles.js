@@ -22,6 +22,9 @@ const styles = StyleSheet.create({
   subTitle: {
     color: "#5c5e62",
   },
+  subtitleCTA: {
+    textDecorationLine: "underline",
+  },
   btn1Container: {
     // flexDirection: "column",
     position: "absolute",
