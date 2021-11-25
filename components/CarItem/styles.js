@@ -1,41 +1,31 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#ffffff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
   carContainer: {
     width: "100%",
-    height: "100%",
+    // height: "100%",
+    height: Dimensions.get("window").height,
   },
   titles: {
-    // marginBottom: "10%",
-    marginTop: "40%",
+    marginTop: "30%",
     alignItems: "center",
-    width: "100%",
-    height: "100%",
   },
-  title: { fontSize: 40, fontWeight: "700" },
+  title: {
+    fontSize: 40,
+    fontWeight: "500",
+  },
   subTitle: {
+    fontSize: 16,
     color: "#5c5e62",
   },
-  subtitleCTA: {
+  subTitleCTA: {
     textDecorationLine: "underline",
   },
-  btn1Container: {
-    // flexDirection: "column",
-    position: "absolute",
-    top: "115%",
+  image: {
     width: "100%",
-  },
-  btn2Container: {
-    // flexDirection: "column",
+    height: "100%",
+    resizeMode: "cover",
     position: "absolute",
-    top: "122%",
-    width: "100%",
   },
 });
 
