@@ -1,2 +1,2 @@
 # LM-tesla-clone-project
-A Tesla clone built with React-Native.
+A Tesla clone built with Expo-CLI and React-Native.
